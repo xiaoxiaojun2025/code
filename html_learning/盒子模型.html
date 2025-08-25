@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        .demo{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 5px solid blue;
+            padding: 100px;
+            margin: 50px;
+        }
+        .demo-1{
+            width: 200px;
+            height: 100px;
+            background-color:yellow;
+            border-width: 5px 10px 15px 20px; /* 上 右 下 左 */
+            border-style: solid dashed dotted double;
+            padding: 20px;
+            border-color: aqua gray rebeccapurple red; /* 包括边框和内边距在内的总宽度和高度 */
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">这是一个盒子模型</div>
+    <div class="demo-1">这是另一个盒子模型</div>
+
+</body>
+</html>

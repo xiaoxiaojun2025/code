@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 导入方式</title>
+    <link rel="stylesheet" href="css/test.css">
+    <style>
+        h1 {
+            color: red;
+            font-size: 30px;
+            text-align: center;
+            background-color: yellow;
+            opacity: 0.5;
+            font-weight: 100;
+            text-decoration: underline;
+                        border: 2px solid #e17055;
+            border-image: 
+                radial-gradient(circle at 50% 50%, transparent 5px, #e17055 6px, #e17055 7px, transparent 8px) 
+                20 / 10px / 0px stretch;
+        }   
+    </style>
+</head>
+<body>
+    <h2>
+        三种导入样式（优先级从高到低）：<br>
+        <ol>
+            <li>行内样式</li>
+            <li>内部样式</li>
+            <li>外部样式</li>
+        </ol>
+    </h2>
+
+    <p style="color: blue;font-size: 16px;">
+        这是一个应用了行内样式的段落
+    </p>
+    <h1 >
+        这是一个应用了内部样式的段落
+    </h1>
+    <h3>
+        这是一个应用了外部样式的段落
+    </h3>
+</body>
+</html>
